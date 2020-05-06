@@ -1,0 +1,11 @@
+
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+text="Python is an interpreted high-level general-purpose programming language Created by Guido van Rossum and first released  Python design philosophy emphasizes code readability its notable use of significant whitespace. Its language constructs oriented approach aim to  programmers write clear logical code  small  large-scale projects" 
+
+cloud =WordCloud(background_color="white").generate(text)
+
+plt.imshow(cloud)
+plt.axis("off")
+plt.show()
